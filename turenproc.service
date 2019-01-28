@@ -1,0 +1,11 @@
+[Unit]
+Description=Rokid turenproc
+
+[Service]
+ExecStart=/usr/bin/turenproc.flora 30000 raspi unix:/var/run/flora.sock
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+
